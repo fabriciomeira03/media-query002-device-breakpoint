@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query em um Único Documento</title>
+
+    <style>
+/* é mais prático separar do que deixar tudo no mesmo arquivo */
+
+/* DECLARAÇÕES GERAIS */
+
+        * {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 100vw;
+    height:100vh;
+    background-color: rgba(0, 56, 241, 0.815);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+h1 { 
+    color: white;
+    text-shadow: 2px 2px 0px rgb(0, 0, 255);
+    padding: 10px;
+}
+
+
+/* DECLARAÇÕES RETRATO*/
+
+@media screen and (orientation: portrait) {
+body {
+    background-image: url(./cev-portrait.jpg);
+    background-position: center top;
+}
+    }
+
+/* DECLARAÇÕES PAISAGEM */
+@media screen and (orientation: landscape) {
+body {
+    background-image: url(./cev-landscape.jpg);
+    background-position: left bottom;
+}
+    }
+    </style>
+</head>
+<body>
+
+    
+</body>
+</html>
